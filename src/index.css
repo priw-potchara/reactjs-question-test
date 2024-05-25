@@ -1,13 +1,52 @@
+@font-face {
+  font-family: "_Prompt";
+  src: url("./static/fonts/prompt-regular-webfont.eot");
+  src: url("./static/fonts/prompt-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("./static/fonts/prompt-regular-webfont.woff2") format("woff2"),
+    url("./static/fonts/prompt-regular-webfont.woff") format("woff");
+  src: url("./static/fonts/Prompt-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "_Prompt" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #E6E7E8; */
+  background: #E6E7E8 url(https://www.health-plaza.com/html/images/curve-footer.png) no-repeat bottom;
+  background-size: contain;
+}
+
+input,
+textarea,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "_Prompt" !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "_Prompt";
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-center {
+  display: flex;
+  justify-content: center;
 }
